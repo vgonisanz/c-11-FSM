@@ -33,8 +33,9 @@ enable_testing()
 
 # Project Logic
 # ------------------------------------------------------------------------------------------------------
-IF(NOT TARGET_PLATFORM STREQUAL TARGET_NONE)  
+IF(NOT TARGET_PLATFORM STREQUAL TARGET_NONE)
    ADD_SUBDIRECTORY(modules)
+   ADD_SUBDIRECTORY(samples)
    ADD_SUBDIRECTORY(tests)
 
 ELSE()
