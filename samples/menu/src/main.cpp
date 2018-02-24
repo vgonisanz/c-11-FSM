@@ -2,7 +2,7 @@
 
 int main(int argc, char **argv)
 {
-    printf("Hello sample!\n");
+    std::cout << "Hello sample!" << std::endl;
 
     Menu mainMenu = Menu("main_menu");
     mainMenu.run();

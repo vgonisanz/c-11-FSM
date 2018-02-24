@@ -6,17 +6,17 @@ Menu::Menu(std::string name):
 _name("")
 {
     _name = name;
-    printf("Creating Menu: %s\n", _name.c_str());
+    std::cout << "Creating Menu: " << _name.c_str() << std::endl;
 }
 
 Menu::~Menu()
 {
-    printf("Destroying Menu: %s\n", _name.c_str());
+    std::cout << "Destroying Menu: " << _name.c_str() << std::endl;
 }
 
 void Menu::run()
 {
-    printf("Running menu: %s\n", _name.c_str());
+    std::cout << "Running Menu: " << _name.c_str() << std::endl;
 
     int choice;
     bool end = true;

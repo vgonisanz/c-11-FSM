@@ -1,19 +1,16 @@
-/* 
+/*
  * Finite State Machine parent class written in c++11 for simple and robust event driven and state based applications.
  *
  * Written by Javier Barbadillo <javier.barbadillo@gmail.com>
  */
- 
-#ifndef FSM_H
-#define FSM_H
+#pragma once
 
-#include <stdio.h>
 #include <iostream>
 #include <vector>
 #include <map>
 #include <functional>
 
-class FSM 
+class FSM
 {
 public:
 	struct State{
@@ -24,7 +21,7 @@ public:
         State(std::string& name):
         name(name){
         }
-    };   
+    };
 	FSM(std::vector<std::string> states, std::string initialState, std::vector<std::string> events, std::vector<std::vector<std::string>> transitions);
     virtual ~FSM() {}
 
@@ -34,9 +31,9 @@ public:
 	bool startFSM();
 	bool updateFSM();
 	bool stopFSM();
-    
-    
-protected:   
+
+
+protected:
     State* _currentState = nullptr;
     int getStateIndex(const std::string& name);
     bool existsEvent(const std::string& event);
@@ -49,4 +46,3 @@ private:
     bool _started = false;
     State* _initialState = nullptr;
 };
-#endif //FSM_H
