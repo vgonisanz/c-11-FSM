@@ -1,12 +1,11 @@
-#include <stdio.h>
-
 #include "menu.h"
 
-Menu::Menu(std::string name):
+Menu::Menu(std::string name, std::vector<std::string> options):
 _name("")
 {
+    std::cout << "Creating Menu: " << name.c_str() << std::endl;
     _name = name;
-    std::cout << "Creating Menu: " << _name.c_str() << std::endl;
+    _options = options;
 }
 
 Menu::~Menu()
@@ -22,10 +21,12 @@ void Menu::run()
     bool end = true;
     while (end != false)
     {
-        std::cout << " 1 - Start the game.\n";
-        std::cout << " 2 - Story.\n";
-        std::cout << " 3 - Help.\n";
-        std::cout << " 4 - Exit.\n";
+        int counter = 0;
+        for (auto &option : _options)
+        {
+            counter++;
+            std::cout << counter << ".-" << option.c_str() << std::endl;
+        }
         std::cout << " Enter your choice and press return: ";
 
         std::cin >> choice;
