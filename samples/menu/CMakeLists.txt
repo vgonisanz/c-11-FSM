@@ -4,6 +4,7 @@ PROJECT(${PROJ_NAME})
 # Include directories with headers
 #---------------------------------------------------#
 INCLUDE_DIRECTORIES( ${${PROJ_MAIN_NAME}_PATH_MAIN}/modules/state-machine/include )
+INCLUDE_DIRECTORIES( ${CMAKE_CURRENT_SOURCE_DIR}/include )
 
 # Source
 #---------------------------------------------------#
