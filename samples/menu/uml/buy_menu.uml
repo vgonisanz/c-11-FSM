@@ -1,0 +1,61 @@
+@startuml
+
+"Weapon types" -down-> "Pistols" : Select
+"Weapon types" -down-> "Shotguns" : Select
+"Weapon types" -down-> "SMG" : Select
+"Weapon types" -down-> "Rifles" : Select
+"Weapon types" -down-> "MachineGuns" : Select
+"Weapon types" -down-> "Equipment" : Select
+
+"Equipment" -up-> "Weapon types" : Buy/Cancel
+"MachineGuns" -up-> "Weapon types" : Buy/Cancel
+"Rifles" -up-> "Weapon types" : Buy/Cancel
+"SMG" -up-> "Weapon types" : Buy/Cancel
+"Shotguns" -up-> "Weapon types" : Buy/Cancel
+"Pistols" -up-> "Weapon types" : Buy/Cancel
+
+"Weapon types" : "Pistols"
+"Weapon types" : "Shotguns"
+"Weapon types" : "SMG"
+"Weapon types" : "Rifles"
+"Weapon types" : "MachineGuns"
+"Weapon types" : "Primary ammo : 100$"
+"Weapon types" : "Secondary ammo : 60$"
+"Weapon types" : "Equipment"
+
+"Pistols" : "USP .45ACP Tactica : 400$"
+"Pistols" : "Glock 18C Select Fire : 400$"
+"Pistols" : "Desert Eagle .50 AE : 650$"
+"Pistols" : "SIG P228 : 600$"
+"Pistols" : "FN Five-Seven : 750$"
+
+"Shotguns" : "M3 Super 90 Combat : 1700$"
+"Shotguns" : "XM1014 : 3000$"
+
+"SMG" : "MP5 Navy : 1500$"
+"SMG" : "Streyr TMP : 1250$"
+"SMG" : "FN P90 : 2350$"
+"SMG" : "MAC-10 : 1400$"
+"SMG" : "H&K UMP : 1700$"
+
+"Rifles" : "AK47 : 2500$"
+"Rifles" : "M4A1 Carbine/COLT : 3100$"
+"Rifles" : "SG552 Commando : 3500$"
+"Rifles" : "Steyr AUG : 3500$"
+"Rifles" : "Steyr Scout Sniper Rifle : 2750$"
+"Rifles" : "Artic Warfare Magnum : 4750$"
+"Rifles" : "SIG SG-550 : 4200$"
+"Rifles" : "G3/SG1 Sniper Rifle : 5000$"
+
+"MachineGuns" : "FN M249 PARA : 5750$"
+
+"Equipment" : "Armor : 650$"
+"Equipment" : "Armor|Helmet : 1000$"
+"Equipment" : "Flash : 200$"
+"Equipment" : "Grenade : 300$"
+"Equipment" : "Smoke : 300$"
+"Equipment" : "Defuser : 200$"
+"Equipment" : "NightVision : 1250$"
+"Equipment" : "Shield : 1000$"
+
+@enduml
