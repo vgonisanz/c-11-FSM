@@ -15,5 +15,7 @@ public:
     Menu(std::string name, std::vector<std::string> options);
     ~Menu();
 
+    //void printResult();
+
     void run();
 };
