@@ -23,3 +23,6 @@ ADD_EXECUTABLE(${PROJ_NAME} ${${PROJ_NAME}_HEADERS} ${${PROJ_NAME}_SRC} )
 TARGET_LINK_LIBRARIES(${PROJ_NAME} state_machine )
 
 add_test(NAME ${PROJ_NAME} COMMAND ${PROJ_NAME})
+
+# UML generation
+add_subdirectory(uml)

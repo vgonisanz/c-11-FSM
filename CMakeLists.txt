@@ -22,6 +22,7 @@ SET(${PROJ_MAIN_NAME}_PATH_MAIN  ${CMAKE_SOURCE_DIR}                         CAC
 SET(${PROJ_MAIN_NAME}_PATH_LIBS  ${PROJECT_BINARY_DIR}/gen                   CACHE PATH "This directory contains all libs")
 SET(${PROJ_MAIN_NAME}_PATH_EXE   ${PROJECT_BINARY_DIR}/gen                   CACHE PATH "This directory contains executables")
 SET(${PROJ_MAIN_NAME}_PATH_DATA  ${${PROJ_MAIN_NAME}_PATH_MAIN}/extras/data/ CACHE PATH "This directory contains all DATA and RESOURCES")
+SET(${PROJ_MAIN_NAME}_PATH_DIAG  ${PROJECT_BINARY_DIR}/diagrams)
 
 SET(GTEST_PATH 			 ${CMAKE_SOURCE_DIR}/thirdparties/googletest-master 	CACHE PATH "Path for google test")
 
